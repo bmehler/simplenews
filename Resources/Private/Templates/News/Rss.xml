@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" 
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+<author>
+	<name>Bernhard Mehler</name>
+</author>
+	<f:for each="{newss}" as="news">
+		<entry>
+			<link href="{f:uri.action(action: 'show', controller: 'News', arguments: '{news:news}', absolute: 'TRUE' ->
+			f:format.htmlspecialchars()}"/>
+			<updated><f:format.date format="d-m-Y - H:i">{news.crdate}</f:format.date></updated>
+			<title>{news.title}</title>			
+			<summary>
+				<f:format.crop maxCharacters="250" respectWordBoundaries="TRUE" respectHtml="TRUE">
+					<f:format.html>{news.text}</f:format.html>
+				</f:format.crop>
+			</summary>
+		</entry>	
+	</f:for>
+	</channel>
+</rss>	

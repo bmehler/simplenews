@@ -1,0 +1,65 @@
+
+plugin.tx_simplenews {
+	view {
+		templateRootPath = {$plugin.tx_simplenews.view.templateRootPath}
+		partialRootPath = {$plugin.tx_simplenews.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_simplenews.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_simplenews.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_simplenews._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-simplenews table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-simplenews table th {
+		font-weight:bold;
+	}
+
+	.tx-simplenews table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+page {
+	includeCSS {
+		bootstrap = http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css
+		bootstrap.external = 1		
+		fontawesome = http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css
+		fontawesome.external = 1
+		simplenews = EXT:simplenews/Resources/Public/Css/custom.css
+		}
+	includeJSlibs {
+		jquery = //code.jquery.com/jquery.js
+		jquery.external = 1
+		bootstrap = http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js
+		bootstrap.external = 1
+	}
+}

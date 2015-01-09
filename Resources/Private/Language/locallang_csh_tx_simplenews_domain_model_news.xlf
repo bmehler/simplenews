@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-12-16T17:37:52Z" product-name="simplenews">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>The news title</source>
+			</trans-unit>
+			<trans-unit id="text.description">
+				<source>The news text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

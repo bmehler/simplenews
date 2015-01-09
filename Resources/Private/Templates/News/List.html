@@ -1,0 +1,26 @@
+<f:layout name="Default" />
+<f:section name="main">
+<f:flashMessages renderMode="div" />
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h1><f:translate key="tx_simplenews_domain_model_news"></f:translate></h1>
+<f:link.action action="rss" format="xml" pageType="100" class="btn btn-small btn-warning">RSS</f:link.action>	
+	<f:for each="{newss}" as="news">
+	<div class="media">
+		  <p class="media-left media-top" href="#">
+			<i class="fa fa-newspaper-o"></i>
+		  </p>
+		  <div class="media-body">
+			<h4 class="media-heading">{news.title}</h4>
+			<h6><f:format.date format="d-m-Y - H:i">{news.crdate}</f:format.date></h6>
+			<p><f:format.crop maxCharacters="250" respectWordBoundaries="TRUE" respectHtml="TRUE"><f:format.html>{news.text}</f:format.html></f:format.crop>
+			<f:link.action action="show" arguments="{news:news}"><f:translate key="this.is.a.key"></f:translate></f:link.action></p>	
+		  </div>
+	</div>		
+	</f:for>
+<div><f:link.action action="archiveList">Zum Archiv</f:link.action></div>
+</div>
+</div>
+</div>
+</f:section>

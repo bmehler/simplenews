@@ -1,0 +1,116 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    110,
+                    65
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+
+                    ]
+                },
+                "name": "News",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "602970466272"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The news title",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "1008759387382"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "The news text",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "text",
+                            "propertyType": "Text",
+                            "uid": "517724050248"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "An easy way to publish news",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "extbase => 6.2\nfluid => 6.2\ntypo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "0.0.1"
+        },
+        "extensionKey": "simplenews",
+        "name": "Simple News Extension",
+        "originalExtensionKey": "simplenews",
+        "persons": [
+            {
+                "company": "",
+                "email": "bernhard.mehler@gmail.com",
+                "name": "Bernhard Mehler",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "News => list",
+                    "noncacheableActions": "News => list",
+                    "switchableActions": ""
+                },
+                "key": "Newslisting",
+                "name": "Simplenews - Newslisting"
+            }
+        ],
+        "vendorName": "Mehler"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2014-12-16 05:37",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

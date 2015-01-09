@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-12-16T17:37:52Z" product-name="simplenews">
+		<header/>
+		<body>
+			<trans-unit id="tx_simplenews_domain_model_news">
+				<source>News</source>
+				<target>Neuigkeiten</target>
+			</trans-unit>
+			<trans-unit id="this.is.a.key">
+				<source>Read more</source>
+				<target>Weiter lesen</target>
+			</trans-unit>
+			<trans-unit id="tx_simplenews_domain_model_news.text">
+				<source>Text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
